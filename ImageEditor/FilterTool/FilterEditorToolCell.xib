@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="FilterEditorToolCell" id="iN0-l3-epB" customClass="FilterEditorToolCell">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="158"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exampleImage" translatesAutoresizingMaskIntoConstraints="NO" id="grf-vK-bfe">
+                    <rect key="frame" x="0.0" y="0.0" width="129" height="129"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="grf-vK-bfe" secondAttribute="height" multiplier="1:1" id="KOO-u0-DTO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQJ-zG-ryw">
+                    <rect key="frame" x="0.0" y="129" width="129" height="29"/>
+                    <color key="backgroundColor" red="0.31764705882352939" green="0.60392156862745094" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dge-7J-vWA">
+                    <rect key="frame" x="0.0" y="0.0" width="129" height="129"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confirm" translatesAutoresizingMaskIntoConstraints="NO" id="Wcq-Iq-rFz">
+                            <rect key="frame" x="52" y="52" width="25" height="25"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.31764705879999999" green="0.60392156860000001" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Wcq-Iq-rFz" firstAttribute="centerY" secondItem="dge-7J-vWA" secondAttribute="centerY" id="SHc-Hy-Ui1"/>
+                        <constraint firstItem="Wcq-Iq-rFz" firstAttribute="centerX" secondItem="dge-7J-vWA" secondAttribute="centerX" id="mYf-xi-MEM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="grf-vK-bfe" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="8Xq-aG-kT1"/>
+                <constraint firstItem="dge-7J-vWA" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="9Yk-4p-GPT"/>
+                <constraint firstItem="grf-vK-bfe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9u8-sq-6yU"/>
+                <constraint firstItem="grf-vK-bfe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ACh-ok-eqa"/>
+                <constraint firstAttribute="bottom" secondItem="oQJ-zG-ryw" secondAttribute="bottom" id="E83-gW-qBr"/>
+                <constraint firstItem="oQJ-zG-ryw" firstAttribute="top" secondItem="dge-7J-vWA" secondAttribute="bottom" id="MYN-fg-z7j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oQJ-zG-ryw" secondAttribute="trailing" id="PJe-G1-xDQ"/>
+                <constraint firstItem="oQJ-zG-ryw" firstAttribute="top" secondItem="grf-vK-bfe" secondAttribute="bottom" id="hfL-Sr-r2N"/>
+                <constraint firstItem="oQJ-zG-ryw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mA9-y3-moa"/>
+                <constraint firstItem="dge-7J-vWA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mlp-ph-env"/>
+                <constraint firstItem="dge-7J-vWA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="xjp-Ud-AbX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageV" destination="grf-vK-bfe" id="7fm-cO-e2i"/>
+                <outlet property="nameLab" destination="oQJ-zG-ryw" id="3zy-C0-7g8"/>
+                <outlet property="selectView" destination="dge-7J-vWA" id="Q4c-KJ-5zY"/>
+            </connections>
+            <point key="canvasLocation" x="-154.40000000000001" y="135.832083958021"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="confirm" width="25" height="25"/>
+        <image name="exampleImage" width="1024" height="1536"/>
+    </resources>
+</document>

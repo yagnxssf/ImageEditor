@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  ImageEditor
+
+  Created by cwsdteam03 on 2019/3/5.
+  Copyright © 2019 cwsdteam03. All rights reserved.
+*/
+
+//相册权限
+NSPhotoLibraryUsageDescription = "请求访问相册来导入图片至App";
+//相机权限
+NSCameraUsageDescription = "请求访问相机来导入图片至App";

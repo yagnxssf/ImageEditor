@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  ImageEditor
+
+  Created by cwsdteam03 on 2019/3/5.
+  Copyright © 2019 cwsdteam03. All rights reserved.
+*/
+
+"相机拍照" = "Camera";
+"美化照片" = "Beautify";
+"设定参数" = "Setting";
+//"多张拍照" = "Multiple photos";
+//"修饰图片" = "Retouching picture";
+//"设定参数" = "Setting parameters";
+
+
+"保存默认值" = "Save Defaults";
+"自动分享" = "Automatic sharing";
+"关于应用" = "About application";
+"分享应用" = "Share application";
+"评价应用" = "Evaluation application";
+"图片保存选项" = "Image Save Options";
+"格式" = "Format";
+"压缩系数" = "Compression factor";
+
+"导出" = "Export";
+"滤镜" = "Filter";
+"调整" = "Adjustment";
+"白平衡" = "White Balance";
+"原始" = "Original";
+"亮度" = "Brightness";
+"对比" = "Contrast";
+"氛围" = "Ambience";
+"高光" = "Highlight";
+"阴影" = "Shadow";
+"色调" = "Hue";
+"色温" = "Temperature";
+"着色" = "Coloring";
+
+"完成" = "Finish";
+"裁剪" = "Crop";
+"马赛克" = "Mosaic";
+"标记" = "Tag";
+"添加文字" = "Add text";
+"重置" = "Reset";
+"旋转" = "Rotate";
+"翻转" = "Flip";
+"自由" = "freedom";
+"大小" = "size";
+"粗细" = "thickness";
+"不透明度" = "Opacity";
+"双击输入文字" = "Double-click the input tex";
+"文字" = "Text";
+
+"分享" = "Share";
+"保存成功！分享给朋友吧" = "Save successfully! Share to friends";
+"返回首页" = "Back to Home";
+
+"双击图片" = "Double Click";
+"进入单张编辑页面" = "Enter the single edit page";
+"左右滑动" = "Slide left and right";
+"随意切换多张图片" = "Switch multiple pictures at will";
+"继续" = "Continue";
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdjustmentCell" id="gTV-IL-0wX" customClass="AdjustmentCell">
+            <rect key="frame" x="0.0" y="0.0" width="65" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="65" height="98"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfd-ki-qae">
+                        <rect key="frame" x="0.0" y="10" width="65" height="57"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <state key="normal" title="亮度" image="atmosphere-unselected">
+                            <color key="titleColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" red="0.31764705879999999" green="0.60392156860000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhI-Zs-F4p">
+                        <rect key="frame" x="0.0" y="77" width="65" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qhI-Zs-F4p" secondAttribute="bottom" constant="10" id="9Fd-yZ-s2X"/>
+                <constraint firstItem="qhI-Zs-F4p" firstAttribute="top" secondItem="yfd-ki-qae" secondAttribute="bottom" constant="10" id="Cjd-ju-jHr"/>
+                <constraint firstItem="yfd-ki-qae" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Cuy-Z2-gr9"/>
+                <constraint firstItem="yfd-ki-qae" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="J9C-NC-nfQ"/>
+                <constraint firstAttribute="trailing" secondItem="yfd-ki-qae" secondAttribute="trailing" id="Pp0-Xq-1q8"/>
+                <constraint firstItem="qhI-Zs-F4p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WsA-uo-2zH"/>
+                <constraint firstAttribute="trailing" secondItem="qhI-Zs-F4p" secondAttribute="trailing" id="vNq-Kc-pkU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="65" height="98"/>
+            <connections>
+                <outlet property="cellBtn" destination="yfd-ki-qae" id="Vdh-h0-ceZ"/>
+                <outlet property="countLab" destination="qhI-Zs-F4p" id="gzi-Nw-j6x"/>
+            </connections>
+            <point key="canvasLocation" x="149.59999999999999" y="176.31184407796104"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="atmosphere-unselected" width="25" height="25"/>
+    </resources>
+</document>

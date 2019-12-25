@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  ImageEditor
+
+  Created by cwsdteam03 on 2019/3/5.
+  Copyright © 2019 cwsdteam03. All rights reserved.
+*/
+//相册权限
+NSPhotoLibraryUsageDescription = "App needs to select an image from the album for editing";
+//相机权限
+NSCameraUsageDescription = "App needs to select pictures from photos for editing";

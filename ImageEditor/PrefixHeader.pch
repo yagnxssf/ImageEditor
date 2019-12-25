@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  ImageEditor
+//
+//  Created by cwsdteam03 on 2018/12/27.
+//  Copyright © 2018 cwsdteam03. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "PADefine.h"
+#import "PAClasses.h"
+
+/******调试******/
+#ifdef DEBUG  // 调试状态
+
+#define NSLog(fmt, ...) NSLog((@"在%s文件 在%s方法 第%d行\n"  fmt),[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__func__,__LINE__,##__VA_ARGS__);
+
+#define debugMethod() NSLog(@"%s", __func__)
+
+#else // 发布状态
+
+#define NSLog(fmt, ...) nil
+
+#define debugMethod()
+
+#endif
+
+
+#ifdef DEBUG // 调试状态
+
+#define SLog(format, ...) printf("class: <%p %s:(%d) > method: %s \n%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )
+
+#else // 发布状态
+
+#define SLog(format, ...) nil
+
+#endif
+
+
+#endif /* PrefixHeader_pch */
