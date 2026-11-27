@@ -1,0 +1,5 @@
+# Xcode 个人工程状态：界面布局、断点、scheme 顺序，因人而异不应入库
+xcuserdata/
+
+# macOS
+.DS_Store
